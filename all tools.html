@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    
+    <!-- Favicon & Mobile Shortcut Links -->
+    <link rel="shortcut icon" href="kharcha.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="kharcha.png">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;    
+            justify-content: flex-start; 
+            padding-top: 40px;           
+            background-image: url(backimg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .heading {
+            font-size: 42px;
+            font-weight: bold;
+            font-family: courier, sans-serif;
+            color: white;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;       /* Allows items to drop to the next row when screen is too small */
+            justify-content: center; /* Centers items nicely */
+            gap: 30px;             /* Space between items */
+            max-width: 500px;      /* Keeps items grouped nicely so they form a 2x2 grid on phones */
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .sites {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, filter 0.3s ease; 
+        }
+
+        .sites:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+
+        .web-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+        }
+
+        .web-text {
+            font-size: 22px;
+            font-weight: bold;
+            font-family: courier;
+            color: white; 
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+    <link rel="shortcut icon" href="tools.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="heading">Tools</div>
+
+    <div class="content">
+        <a href="https://kintaro-swot.github.io/pay-day/" target="_blank" rel="noopener noreferrer">
+            <div class="sites pay-day">
+                <img src="pay-day.png" alt="Pay Day" class="web-img">
+                <div class="web-text">Pay Day</div>
+            </div>
+        </a>
+
+        <a href="https://kintaro-swot.github.io/salary/" target="_blank" rel="noopener noreferrer">
+            <div class="sites selary-spending">
+                <img src="salary-spand.png" alt="Salary-Spand" class="web-img">
+                <div class="web-text">Salary-Spand</div>
+            </div>
+        </a>
+
+        <a href="https://kintaro-swot.github.io/Kharcha/" target="_blank" rel="noopener noreferrer">
+            <div class="sites kharcha">
+                <img src="kharcha.png" alt="Kharcha" class="web-img">
+                <div class="web-text">Kharcha</div>
+            </div>
+        </a>
+
+        <a href="https://kintaro-swot.github.io/balance-sheet/" target="_blank" rel="noopener noreferrer">
+            <div class="sites balance-sheet">
+                <img src="balance-sheet.jpeg" alt="Balance-Sheet" class="web-img">
+                <div class="web-text">Balance-Sheet</div>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
